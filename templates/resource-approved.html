@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resource Request Approved</title>
+    <style></style>
+  </head>
+  <body
+    style="
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+        'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #212529;
+      text-align: left;
+      background-color: #fff;
+    "
+  >
+    <nav
+      style="
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: #212529;
+      "
+      class="navbar navbar-dark bg-dark"
+    >
+      <div
+        class="header"
+        style="
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+        "
+      >
+        <img
+          src="https://i.postimg.cc/MpjvLGyf/adaptive-icon.png"
+          style="
+            height: auto;
+            border: 0;
+            max-width: 100%;
+            width: 50px;
+            display: flex;
+          "
+          alt="your logo"
+          title="Share and Care"
+        />
+        <span style="margin: 10px; color: white; font-size: large"
+          >Share & Care</span
+        >
+      </div>
+    </nav>
+    <div
+      class="container"
+      style="
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+      "
+    >
+      <h2 style="margin: 10px 0px">Request Approved!</h2>
+      <table align="center" style="max-width: 50%" class="table table-striped">
+        <tbody>
+          <tr>
+            <th scope="row" style="text-align: center" colspan="2">
+              Resource Details
+            </th>
+          </tr>
+          <tr>
+            <th scope="row">Resource</th>
+            <td>{{resource}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Duration</th>
+            <td>{{duration}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Quantity</th>
+            <td>{{quantity}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Additional Notes</th>
+            <td>{{notes}}</td>
+          </tr>
+          <tr>
+            <th scope="row" style="text-align: center" colspan="2">
+              Requested By
+            </th>
+          </tr>
+          <tr>
+            <th scope="row">Name</th>
+            <td>{{requestedByName}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Phone</th>
+            <td>{{requestedByPhone}}</td>
+          </tr>
+
+          <tr>
+            <th scope="row">Email</th>
+            <td>{{requestedByEmail}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Address</th>
+            <td>{{requestedByAddress}}</td>
+          </tr>
+          <tr>
+            <th scope="row" style="text-align: center" colspan="2">
+              Approved By
+            </th>
+          </tr>
+          <tr>
+            <th scope="row">Name</th>
+            <td>{{approvedByName}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Phone</th>
+            <td>{{approvedByPhone}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Email</th>
+            <td>{{approvedByEmail}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
